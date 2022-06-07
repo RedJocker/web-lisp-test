@@ -5,7 +5,8 @@
 
 (print "build.lisp")
 (log-title "Building the system ...")
+(ql:quickload :usocket)
 (ql:quickload :hunchentoot)
 (ql:quickload :cl-who)
 (ql:quickload :drakma)
-(log-footer "")
+(log-footer "finish build.lisp")
