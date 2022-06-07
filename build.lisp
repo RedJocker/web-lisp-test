@@ -3,6 +3,7 @@
 
 (in-package :cl-user)
 
+(print "build.lisp")
 (log-title "Building the system ...")
 (ql:quickload :hunchentoot)
 (ql:quickload :cl-who)
