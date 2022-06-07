@@ -51,4 +51,4 @@
 (require :hunchentoot)
 ;(hunchentoot:start (make-instance 'hunchentoot:easy-acceptor :port *port*))
 ;(loop (sleep 1000))
-(load "web.lisp")
+(load "./web.lisp")
