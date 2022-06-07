@@ -8,3 +8,4 @@ export PATH="${VIRTUAL_ROOT}/bin:${PATH}"
 export ASDF_OUTPUT_TRANSLATIONS=/:
 
 sbcl --script web-launcher.lisp
+sbcl --script web.lisp
