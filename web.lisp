@@ -1,3 +1,5 @@
+(print "web.lisp")
+
 ;;; load library for rest
 ;(ql:quickload "hunchentoot")
 
