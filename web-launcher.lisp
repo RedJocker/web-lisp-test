@@ -14,6 +14,7 @@
 (defun log-footer (fmt &rest args)
   (apply #'log-base "              [DONE]" fmt args))
 
+(print "Requiring asdf")
 (require :asdf)
 (asdf:disable-output-translations)
 
@@ -37,6 +38,7 @@
     (when (probe-file quicklisp-init)
       (load quicklisp-init))))
 
+(print "Requiring quicklisp")
 (require-quicklisp)
 
 (log-title "Check SBCL-Framework before running ...")
@@ -45,6 +47,7 @@
 (log-content "   Quicklisp Version ~a." (quicklisp-client:client-version))
 (log-footer "")
 
+(print "Requiring hunchentoot")
 (require :hunchentoot)
 (hunchentoot:start (make-instance 'hunchentoot:easy-acceptor :port *port*))
 (loop (sleep 1000))
