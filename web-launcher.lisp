@@ -2,7 +2,7 @@
 ; Brief: Web launcher.
 
 (in-package :cl-user)
-
+(print "web-launcher.lisp")
 (defun log-base (prefix fmt &rest args)
   (let ((newfmt (concatenate 'string prefix fmt "~%")))
     (apply #'format t newfmt args)))
