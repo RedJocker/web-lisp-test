@@ -17,8 +17,10 @@
   (:use :cl :cl-who :hunchentoot :parenscript)
   (:export standard-page))
 
+(defvar *port* (parse-integer (asdf::getenv "PORT")))
+
 ;;; start web service at "http://127.0.0.1:4242/"
-(defvar server (make-instance 'hunchentoot:easy-acceptor :port 4242))
+(defvar server (make-instance 'hunchentoot:easy-acceptor :port *port*))
 (hunchentoot:start server)
 ;; stop web service
 ;(hunchentoot:stop server)
